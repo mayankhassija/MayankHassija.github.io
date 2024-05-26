@@ -3,112 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>freecodecamp Certifications</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto Mono', monospace;
-            background-color: #0a0a23;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-            font-size: 24px;
-            background-color: #ffffff;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 10px 0;
-            cursor: pointer;
-        }
-        h2 {
-            color: #555;
-            font-size: 20px;
-            background-color: #eaeaea;
-            padding: 8px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 10px 0;
-            display: none; /* Initially hidden */
-        }
-        h2 a {
-            color: inherit;
-            text-decoration: none;
-        }
-        h2 a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>FreeCodeCamp Certifications</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1 onclick="toggleDetails(this)">Responsive Web Design</h1>
-    <h2><a href="https://mayankhassija.github.io/fCC/1.html">Cat Photo App</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/2.html">Cafe Menu</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/3.html">Set of Colored Markers</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/4.html">Registration Form</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/5.html">Rothko Painting</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/6.html">Photo Gallery</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/7.html">Nutrition Label</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/8.html">Quiz</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/9.html">Balance Sheet</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/10.html">Cat Painting</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/11.html">Piano</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/12.html">City Skyline</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/13.html">Magazine</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/14.html">Ferris Wheel</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/15.html">Penguin</a></h2>pyramid-generator
+    <header class="bg-dark text-white text-center py-3 mb-4">
+        <h1>FreeCodeCamp Certification Projects</h1>
+    </header>
 
-    <h1 onclick="toggleDetails(this)">JavaScript Algorithms and Data Structures (Beta)</h1>
-    <h2><a href="https://mayankhassija.github.io/fCC/16.html">Pyramid Generator</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/17.html">Gradebook App</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/18.html">Role Playing Game</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/19.html">Calorie Counter</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/20.html">Rock Paper Scissors Game</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/21.html">Music Player</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/22.html">Date Formatter</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/23.html">Football Team Cards</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/24.html">Todo App</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/25.html">Decimal To Binary Converter</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/26.html">Spam Filter</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/27.html">Number Sorter</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/28.html">Statistics Calculator</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/29.html">Spreadsheet</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/30.html">Shopping Cart</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/31.html">Platformer Game</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/32.html">Dice Game</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/33.html">fCC Authors Page</a></h2>
-    <h2><a href="https://mayankhassija.github.io/fCC/33.html">fCC Forum Leaderboard</a></h2>
+    <div class="container">
+        <section class="mb-5">
+            <h2 class="text-center">Projects</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Responsive Web Design
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/1.html" class="text-dark">Cat Photo App</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/2.html" class="text-dark">Cafe Menu</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/3.html" class="text-dark">Set of Colored Markers</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/4.html" class="text-dark">Registration Form</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/5.html" class="text-dark">Rothko Painting</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/6.html" class="text-dark">Photo Gallery</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/7.html" class="text-dark">Nutrition Label</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/8.html" class="text-dark">Quiz</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/9.html" class="text-dark">Balance Sheet</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/10.html" class="text-dark">Cat Painting</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/11.html" class="text-dark">Piano</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/12.html" class="text-dark">City Skyline</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/13.html" class="text-dark">Magazine</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/14.html" class="text-dark">Ferris Wheel</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/15.html" class="text-dark">Penguin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                JavaScript Algorithms and Data Structures (Beta)
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/16.html" class="text-dark">Pyramid Generator</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/17.html" class="text-dark">Gradebook App</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/18.html" class="text-dark">Role Playing Game</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/19.html" class="text-dark">Calorie Counter</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/20.html" class="text-dark">Rock Paper Scissors Game</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/21.html" class="text-dark">Music Player</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/22.html" class="text-dark">Date Formatter</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/23.html" class="text-dark">Football Team Cards</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/24.html" class="text-dark">Todo App</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/25.html" class="text-dark">Decimal To Binary Converter</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/26.html" class="text-dark">Spam Filter</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/27.html" class="text-dark">Number Sorter</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/28.html" class="text-dark">Statistics Calculator</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/29.html" class="text-dark">Spreadsheet</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/30.html" class="text-dark">Shopping Cart</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/31.html" class="text-dark">Platformer Game</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/32.html" class="text-dark">Dice Game</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/33.html" class="text-dark">fCC Authors Page</a></li>
+                                <li class="list-group-item"><a href="https://mayankhassija.github.io/fCC/34.html" class="text-dark">fCC Forum Leaderboard</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Front End Development Libraries
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="text-center">Projects coming soon...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Data Visualization
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="text-center">Projects coming soon...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Relational Database
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="text-center">Projects coming soon...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Back End Development and APIs
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="text-center">Projects coming soon...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSeven">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Quality Assurance
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="text-center">Projects coming soon...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingEight">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                Scientific Computing with Python (Beta)
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="text-center">Projects coming soon...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingNine">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                Data Analysis with Python
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="text-center">Projects coming soon...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTen">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                Information Security
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="text-center">Projects coming soon...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingEleven">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                Machine Learning with Python
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="text-center">Projects coming soon...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwelve">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                College Algebra with Python
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="text-center">Projects coming soon...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
-    <h1 onclick="toggleDetails(this)">Front End Development Libraries</h1>
-
-    <h1 onclick="toggleDetails(this)">Data Visualization</h1>
-
-    <h1 onclick="toggleDetails(this)">Relational Database</h1>
-
-    <h1 onclick="toggleDetails(this)">Back End Development and APIs</h1>
-
-    <h1 onclick="toggleDetails(this)">Quality Assurance</h1>
-
-    <h1 onclick="toggleDetails(this)">Scientific Computing with Python (Beta)</h1>
-
-    <h1 onclick="toggleDetails(this)">Data Analysis with Python</h1>
-
-    <h1 onclick="toggleDetails(this)">Information Security</h1>
-
-    <h1 onclick="toggleDetails(this)">Machine Learning with Python</h1>
-
-    <h1 onclick="toggleDetails(this)">College Algebra with Python</h1>
-
-    <script>
-        function toggleDetails(element) {
-            var nextElement = element.nextElementSibling;
-            if (nextElement.style.display === "none" || nextElement.style.display === "") {
-                nextElement.style.display = "block";
-            } else {
-                nextElement.style.display = "none";
-            }
-        }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
