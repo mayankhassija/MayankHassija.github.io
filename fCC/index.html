@@ -3,59 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fCC Projects</title>
+    <title>freecodecamp Certifications</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Lato', sans-serif;
+            font-family: 'Roboto Mono', monospace;
+            background-color: #0a0a23;
             margin: 0;
-            padding: 0;
-            background-color: #f5f6f7;
-            color: #333;
-        }
-        .container {
-            text-align: center;
-            padding: 50px;
+            padding: 20px;
         }
         h1 {
-            font-family: 'Roboto Mono', monospace;
-            font-size: 24px;
-            margin-bottom: 30px;
-        }
-        .link {
-            display: block;
-            margin: 10px;
-            text-decoration: none;
             color: #333;
-            padding: 5px 10px;
-            background-color: #fff;
-            border: 1px solid #ccc;
+            font-size: 24px;
+            background-color: #ffffff;
+            padding: 10px;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            cursor: pointer;
         }
-        .link:hover {
-            background-color: #e0e0e0;
+        h2 {
+            color: #555;
+            font-size: 20px;
+            background-color: #eaeaea;
+            padding: 8px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            display: none; /* Initially hidden */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Responsive Web Design Course</h1>
-        <a class="link" href="https://mayankhassija.github.io/fCC/01.html">learn-html-by-building-a-cat-photo-app</a>
-        <a class="link" href="https://mayankhassija.github.io/fCC/02.html">learn-basic-css-by-building-a-cafe-menu</a>
-        <a class="link" href="https://mayankhassija.github.io/fCC/03.html">learn-css-colors-by-building-a-set-of-colored-markers</a>
-        <a class="link" href="https://mayankhassija.github.io/fCC/04.html">learn-html-forms-by-building-a-registration-form</a>
-        <a class="link" href="https://mayankhassija.github.io/fCC/05.html">learn-the-css-box-model-by-building-a-rothko-painting</a>
-        <a class="link" href="https://mayankhassija.github.io/fCC/06.html">learn-css-flexbox-by-building-a-photo-gallery</a>
-        <a class="link" href="https://mayankhassija.github.io/fCC/07.html">learn-typography-by-building-a-nutrition-label</a>
-        <a class="link" href="https://mayankhassija.github.io/fCC/08.html">learn-accessibility-by-building-a-quiz</a>
-        <a class="link" href="https://mayankhassija.github.io/fCC/09.html">learn-more-about-css-pseudo-selectors-by-building-a-balance-sheet</a>
-        <a class="link" href="https://mayankhassija.github.io/fCC/10.html">learn-intermediate-css-by-building-a-cat-painting</a>
-        <a class="link" href="https://mayankhassija.github.io/fCC/11.html">learn-responsive-web-design-by-building-a-piano</a>
-        <a class="link" href="https://mayankhassija.github.io/fCC/12.html">learn-css-variables-by-building-a-city-skyline</a>
-        <a class="link" href="https://mayankhassija.github.io/fCC/13.html">learn-css-grid-by-building-a-magazine</a>
-        <a class="link" href="https://mayankhassija.github.io/fCC/14.html">learn-css-animation-by-building-a-ferris-wheel</a>
-        <a class="link" href="https://mayankhassija.github.io/fCC/15.html">learn-css-transforms-by-building-a-penguin</a>
-        <a class="link" href="https://www.freecodecamp.org/certification/mayankhasija/responsive-web-design">View Certification</a>
-    </div>
+    <h1 onclick="toggleDetails(this)">1. Responsive Web Design</h1>
+    <h2>Learn how to build responsive websites with HTML and CSS.</h2>
+
+    <h1 onclick="toggleDetails(this)">2. JavaScript Algorithms and Data Structures (Beta)</h1>
+    <h2>Master JavaScript algorithms and data structures.</h2>
+
+    <h1 onclick="toggleDetails(this)">3. Front End Development Libraries</h1>
+    <h2>Understand and use front-end libraries like React, Bootstrap, and jQuery.</h2>
+
+    <h1 onclick="toggleDetails(this)">4. Data Visualization</h1>
+    <h2>Visualize data with D3.js and other libraries.</h2>
+
+    <h1 onclick="toggleDetails(this)">5. Relational Database</h1>
+    <h2>Learn about relational databases and SQL.</h2>
+
+    <h1 onclick="toggleDetails(this)">6. Back End Development and APIs</h1>
+    <h2>Build and manage back-end services and APIs.</h2>
+
+    <h1 onclick="toggleDetails(this)">7. Quality Assurance</h1>
+    <h2>Ensure the quality of your projects with testing and best practices.</h2>
+
+    <h1 onclick="toggleDetails(this)">8. Scientific Computing with Python (Beta)</h1>
+    <h2>Use Python for scientific computing and data analysis.</h2>
+
+    <h1 onclick="toggleDetails(this)">9. Data Analysis with Python</h1>
+    <h2>Analyze and visualize data using Python libraries.</h2>
+
+    <h1 onclick="toggleDetails(this)">10. Information Security</h1>
+    <h2>Learn about securing information and best practices.</h2>
+
+    <h1 onclick="toggleDetails(this)">11. Machine Learning with Python</h1>
+    <h2>Build and train machine learning models using Python.</h2>
+
+    <h1 onclick="toggleDetails(this)">12. College Algebra with Python</h1>
+    <h2>Understand algebra concepts and solve problems using Python.</h2>
+
+    <script>
+        function toggleDetails(element) {
+            var nextElement = element.nextElementSibling;
+            if (nextElement.style.display === "none" || nextElement.style.display === "") {
+                nextElement.style.display = "block";
+            } else {
+                nextElement.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
